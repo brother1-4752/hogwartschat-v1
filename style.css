@@ -1,0 +1,24 @@
+/* 공통 CSS */
+
+body {
+    box-sizing: border-box;
+    background-color: blue;
+    width: 640px;
+    height: 1136 px;
+}
+
+
+/* scroll-bar width포함해 max-width설정 */
+@media only screen and (max-width: 658px ){
+    body {
+        font-size: 30px;
+    }
+}
+
+/* 320x568 is common for entry-level smartphones.
+비율만 맞추고, 각각 2배씩 늘렸다. */
+.app {
+    width: 640px;
+    height: 1136px;
+    background-color: red;
+}

@@ -1,0 +1,27 @@
+/* Reset CSS */
+
+/* Remove default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default border */
+img, fieldset {
+    border: 0;
+}
+
+/* Remove default list styling */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default text decoration */
+a {
+    text-decoration: none;
+}
+
+/* Remove default font styles */
+body, input, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
