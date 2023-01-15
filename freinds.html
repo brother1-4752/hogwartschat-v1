@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef21b2e4b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="freinds.css">
     <title>Freinds</title>
 </head>
 <body>
-    <h1>됨?</h1>
+    <section class="app">
+        <div class="status-bar">
+            <section class="status-bar__column">
+                <span>10:53</span>
+                <i class="fa-solid fa-paper-plane fa-sm"></i>
+            </section>
+            <section class="status-bar__column">
+                <i class="fa-solid fa-plane fa-sm"></i>
+                <i class="fa-solid fa-wifi fa-sm"></i>
+                <i class="fa-solid fa-battery-full fa-sm"></i>
+            </section>
+        </div>
+
+        <header class="freinds__main-header">
+            <h1>Freinds</h1>
+            <div class="freinds__main-header--icons">
+                <i class="fa-solid fa-user-plus"></i>
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </header>
+
+        <section class="freinds--poster">
+            <img src="images/freinds-poster.png" alt="freinds-poster" style="width: 100%; height: 80px; background-size: cover;opacity: 0.8;">
+        </section>
+
+        <div class="self-profile">
+            <div class="profile-img"><img src="images/harrypotter.jpg" alt="potter-selfie"></div>
+            <h1 class="profile-name"></h1>
+            <h3 class="profile-comment"></h3>
+        </div>
+    </section>
+
+    <div class="no-mobile">
+        <div><img class="no-mobile--logo" src="images/login__form--title.png" alt="no-mobile--logo"></div>
+        <h1 class="no-mobile--text">The width is too big.<br>If you reduce the width,<br>the world of Hogwarts opens!</h1>
+    </div>
 </body>
 </html>

@@ -1,0 +1,16 @@
+.status-bar {
+    margin-bottom: 15px;
+}
+
+.freinds__main-header{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.freinds--poster{
+    width: 100%;
+    height: 80px;
+    opacity: 0.9;
+}
