@@ -1,0 +1,126 @@
+@font-face { /* 애플산돌고딕 폰트 적용 */
+    font-family: "potter";
+    src: url("font/potter.TTF") format("truetype");
+    font-weight: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'potter', serif;   
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    width: 280px;
+    height: 594px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/login-bg.jpg);
+    background-size: cover;
+    /* z-index: 1; */
+    background-repeat: no-repeat;
+    color: rgb(235, 146, 46);
+}
+
+/* status-bar */
+.status-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/* login__main-header */
+.login__main-header{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login__main-header--titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.login__main-header--description{
+    text-align: center;
+    font-size: 24px;
+}
+
+/* login-container */
+.login-container{
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    /* box-shadow: rgba(228, 148, 57, 0.25) 0px 54px 55px, rgba(228, 148, 57, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(228, 148, 57, 0.04) 0px -3px 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.login-form--title{
+    margin: 25px 0;
+    font-size: 30px;
+}
+
+.login-form{
+    width: 170px;
+    height: 130px;
+}
+
+.login-form--input{
+    width: 170px;
+    height: 30px;
+    border: 1px solid #e9e9e9;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border-style: none;
+    background-color: rgba(235, 146, 46,0.8);
+    color: #e9e9e9;
+}
+
+.no-mobile {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(235, 146, 46);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.no-mobile--logo{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width : 800px){
+    .no-mobile{
+        display: none;
+    }
+}
