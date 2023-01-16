@@ -1,0 +1,30 @@
+.search__main-header {
+    border: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search__main-header--column{
+    width: 24.5%;
+    margin-bottom: 30px;
+
+}
+
+.search__main-header--name{
+    text-align: center;
+}
+
+@keyframes changeColor {
+    from{
+        color: whitesmoke;
+        background-color: rgb(235, 146, 46);
+    }to{
+        color: rgb(235, 146, 46);
+        background-color: whitesmoke;
+        border-radius: 15px;
+    }
+}
+
+.search__main-header--column:hover{
+    animation: changeColor 1s ease-in-out forwards;
+}

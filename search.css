@@ -1,0 +1,200 @@
+.search__main-header{
+    width: 90%;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+}
+
+@keyframes changeColor {
+    from{
+        color: whitesmoke;
+        background-color: rgb(235, 146, 46);
+    }to{
+        color: rgb(235, 146, 46);
+        background-color: whitesmoke;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+
+.search__main-header--column{
+    height: 60px;
+}
+
+.search__main-header--column:hover{
+    animation: changeColor 1s ease-in-out forwards;
+}
+
+.search__main-header--column>i{
+    font-size: 26px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.villan{
+    width: 90%;
+    height: 180px;
+    border-bottom: 1px solid;
+}
+
+.villan--description{
+    display: flex;
+    justify-content: space-between;
+}
+.villan--profile{
+    position: relative;
+}
+.villan--link{
+    height: 25px;
+    position: absolute;
+    padding: 10px;
+    left: 15px;
+    bottom: 15px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.villan--details > h2{
+    font-size: 12px;
+}
+
+.villan--details, villan--profile{
+    width: 40%;
+}
+
+.villan--details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.alarm-box{
+    margin: 8px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@keyframes changeColor {
+    from{
+        color: whitesmoke;
+    }to{
+        color: #009900;
+    }
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+
+  .alarm-box > i {
+    animation: wobble-hor-bottom 1.5s infinite, changeColor 1.5s ease-in-out infinite;
+    margin-right: 5px;
+  }
+
+  .search__openchat{
+    width: 90%;
+    height: 25%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+  }
+
+.search__openchat::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+
+  .search__openchat--header-title{
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .search__openchat-row{
+    display: flex;
+    background-color: rgba(65, 65, 65, 0.65);
+    border-radius: 12px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .openchat-row--description > h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .openchat-row--description > p{
+    opacity: 0.8;
+  }
+
+  .openchat-row--description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
