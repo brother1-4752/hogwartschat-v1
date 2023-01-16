@@ -53,7 +53,7 @@
     position: absolute;
     padding: 10px;
     left: 15px;
-    bottom: 15px;
+    bottom: 0;
     border: 1.5px solid black;
     border-radius: 10px;
     display: flex;
@@ -67,6 +67,7 @@
 
 .villan--details, villan--profile{
     width: 40%;
+    height: 110px;
 }
 
 .villan--details{
