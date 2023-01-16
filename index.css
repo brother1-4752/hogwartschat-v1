@@ -195,9 +195,52 @@ body {
     }
 }
 
-/* @keyframes rotate360Degrees {
-    
-} */
+@-webkit-keyframes rotateCenter {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotateCenter {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes roll-out-right {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(300px) rotate(540deg);
+              transform: translateX(300px) rotate(540deg);
+      opacity: 0;
+    }
+  }
+  @keyframes roll-out-right {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(300px) rotate(540deg);
+              transform: translateX(300px) rotate(540deg);
+      opacity: 0;
+    }
+  }
+
 
 .foot-bar{
     width: 100%;
@@ -210,11 +253,16 @@ body {
     border-top: 0.5px solid whitesmoke;
 }
 
-.foot-bar--column >a> i:hover,
-foot-bar--icon:hover{
-    animation: moveIcons 0.9s both, changeColorMenu 0.9s ease-in-out forwards;
+.freinds__main-header--icons >i:hover,
+.foot-bar--column > a>i:hover{
+    animation: moveIcons 0.9s infinite, changeColorMenu 0.9s ease-in-out infinite;
 }
 
 .fa-gear:hover{
-    animation: moveIcons 0.9s both, changeColorMenu 0.9s ease-in-out forwards;
+    animation: rotateCenter 0.9s ease-in-out infinite, changeColorMenu 0.9s ease-in-out infinite;
+}
+
+.no-mobile--logo,
+.roll-out-right {
+    animation: roll-out-right 4s infinite;
 }

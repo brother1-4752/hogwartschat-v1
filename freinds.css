@@ -73,41 +73,50 @@
     margin: 15px 0;
 }
 
-.gryffindor--title,
-.gryffindor{
+.gryffindor--title{
     color: rgb(184, 22, 28);
 }
+
+.gryffindor{
+    color: white;
+}
 .gryffindor--title{
-    border-bottom: 1px solid rgb(184, 22, 28);
     padding-bottom: 5px;
 }
 
-.hufflepuff--title,
-.hufflepuff{
+.hufflepuff--title{
     color: rgb(246, 232, 15);
 }
-.hufflepuff--title{
-    border-bottom: 1px solid rgb(246, 232, 15);
-    padding-bottom: 5px;
+
+.hufflepuff{
+    color: whitesmoke;
 }
 
-.ravenclaw--title,
-.ravenclaw{
-    color : blue ;
+.hufflepuff--title{
+    padding-bottom: 5px;
 }
 
 .ravenclaw--title{
-    border-bottom: 1px solid blue ;
+    color : #0396bd ;
+}
+
+.ravenclaw{
+    color: whitesmoke;
+}
+
+.ravenclaw--title{
     padding-bottom: 5px;
 }
 
-.slytherin--title,
-.slytherin{
+.slytherin--title{
     color : green ;
 }
 
+.slytherin{
+    color: whitesmoke;
+}
+
 .slytherin--title{
-    border-bottom: 1px solid green ;
     padding-bottom: 5px;
 }
 
@@ -129,8 +138,8 @@
 }
 
 .comment--gryffindor{
-    border: 1px solid rgb(184, 22, 28);
-    color: rgb(184, 22, 28);
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
     margin-bottom: 20px;
 }
 
