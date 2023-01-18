@@ -1,0 +1,40 @@
+.search__main-header {
+    height: 50%;
+    border: none;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.search__main-header--column{
+    width: 60px;
+    height: 70px;
+    margin-bottom: 30px;
+    padding: 10px;
+    zoom: 1.3;
+
+}
+
+.search__main-header--column>i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__main-header--name{
+    text-align: center;
+}
+
+@keyframes changeColor {
+    from{
+        color: whitesmoke;
+        background-color: rgb(235, 146, 46);
+    }to{
+        color: rgb(235, 146, 46);
+        background-color: whitesmoke;
+        border-radius: 15px;
+    }
+}
+
+.search__main-header--column:hover{
+    animation: changeColor 1s ease-in-out forwards;
+}

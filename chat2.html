@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef21b2e4b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="chats.css">
+    <link rel="stylesheet" href="chatroom.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brother1-4752.github.io/hogwartschat-v1/index.html">
+    <meta property="og:title" content="Hogwarts-Chat">
+    <meta property="og:image" content="https://brother1-4752.github.io/hogwartschat-v1/images/og-image.jpg">
+    <meta property="og:description" content="Chat-App Side Project">
+    <meta property="og:site_name" content="HogwartsChat">
+    <meta property="og:locale" content="en_US">
+    <!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Chrome, Safari, IE -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    
+    <!-- Firefox, Opera (Chrome and Safari say thanks but no thanks) -->
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="icon" href="images/favicon.png" sizes="16x16">
+    <link rel="icon" href="images/favicon.png" sizes="32x32">
+    <link rel="icon" href="images/favicon.png" sizes="48x48">
+    <link rel="icon" href="images/favicon.png" sizes="64x64">
+    <link rel="icon" href="images/favicon.png" sizes="128x128">
+    <title>Chat room 2</title>
+</head>
+<body>
+    <section class="app">
+        <div class="status-bar">
+            <section class="status-bar__column">
+                <span>10:53</span>
+                <i class="fa-solid fa-paper-plane fa-sm"></i>
+            </section>
+            <section class="status-bar__column">
+                <i class="fa-solid fa-plane fa-sm"></i>
+                <i class="fa-solid fa-wifi fa-sm"></i>
+                <i class="fa-solid fa-battery-full fa-sm"></i>
+            </section>
+        </div>
+
+        <div class="chatroom__header">
+            <a style="text-decoration: none; color: whitesmoke;" href="chats.html">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <h1 class="chatroom__header--title">Ron</h1>
+            <div class="chatroom__header--column">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </div>
+
+        <section class="chatroom__popup">
+            <i class="fa-solid fa-circle-exclamation fa-lg"></i>
+            <div class="chatroom__popup--contents">
+                <h3 style="color: rgba(0, 0, 0, 0.8);" class="chatroom__popup--content">1 : Studying programming</h3>
+                <h3 style="color: rgba(0, 0, 0, 0.8);" class="chatroom__popup--content">2 : Eat avocado</h3>
+            </div>
+            <i class="fa-solid fa-arrow-down"></i>
+        </section>
+
+        <main class="chatroom__talks">
+            <div class="chats__dialogues">
+                <div class="chats__dialogue">
+                    <div class="chats__dialogue-profile"><img src="images/ron.jpg" alt="ron" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+                    <a href="#" class="chats__dialogue-description">
+                        <h1 class="chats__dialogue-title">Ron</h1>
+                        <p class="chats__dialogue--recent-msg">Potter!</p>
+                    </a>
+                    <p class="chatroom__timestamp">11:23</p>
+                </div>
+
+                <div class="chats__dialogue">
+                    <div class="chats__dialogue-profile"><img src="images/ron.jpg" alt="ron" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+                    <a href="#" class="chats__dialogue-description">
+                        <h1 class="chats__dialogue-title">Ron</h1>
+                        <p class="chats__dialogue--recent-msg">He's coming, Harry</p>
+                    </a>
+                    <p class="chatroom__timestamp">14:11</p>
+                </div>
+
+                <div class="chats__dialogue">
+                    <div class="chats__dialogue-profile"><img src="images/ron.jpg" alt="ron" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+                    <a href="#" class="chats__dialogue-description">
+                        <h1 class="chats__dialogue-title">ron</h1>
+                        <p class="chats__dialogue--recent-msg">Please be careful.</p>
+                    </a>
+                    <p class="chatroom__timestamp">17:33</p>
+                </div>
+
+                <div class="chats__dialogue chats__dialogue--right">
+                    <div class="chats__dialogue-profile chats__dialogue-profile--right"><img src="images/harrypotter.jpg" alt="Harry Potter" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+                    <a href="#" class="chats__dialogue-description chats__dialogue-description--right">
+                        <h1 class="chats__dialogue-title">Harry Potter</h1>
+                        <p class="chats__dialogue--recent-msg">OMG...</p>
+                    </a>
+                    <p class="chatroom__timestamp chatroom__timestamp--right">19:11</p>
+                </div>
+            </div>
+        </main>
+
+        <form class="chatroom__footer">
+            <i class="fa-solid fa-plus"></i>
+            <input type="text" class="chatroom__footer--text" >
+            <div class="chat__footer--columm">
+                <i class="fa-regular fa-face-smile chatroom__footer--icons"></i>
+                <i class="fa-solid fa-hashtag chatroom__footer--icons"></i>
+            </div>
+            
+        </form>
+    </section>
+
+    <div class="no-mobile">
+        <div><img class="no-mobile--logo" src="images/login__form--title.png" alt="no-mobile--logo"></div>
+        <h1 class="no-mobile--text">The width is too big.<br>If you reduce the width,<br>the world of Hogwarts opens!</h1>
+    </div>
+</body>
+</html>

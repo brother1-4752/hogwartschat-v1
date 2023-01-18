@@ -1,0 +1,88 @@
+.freinds__main-header{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+
+  
+.chats__dialogues{
+  margin-top: 10px;
+  width: 90%;
+    height: 450px;
+    zoom: 0.9;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+  }
+
+.chats__dialogues::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.chats__dialogue{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    animation: slide-in-elliptic-top-fwd 1.5s forwards;
+    zoom: 0.9;
+}
+
+.chats__dialogue-profile{
+    margin-right: 15px;
+}
+
+.chats__dialogue-title{
+    margin-bottom: 5px;
+}
+
+.chats__dialogue--date{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12px;
+}
+
+.chats__dialogue-description{
+    text-decoration: none;
+    color: whitesmoke;
+}
